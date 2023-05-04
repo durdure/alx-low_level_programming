@@ -3,10 +3,10 @@
 #include "main.h"
 
 /**
- * binary_to_uint - Converts a binary number to a unsigned int
+ * binary_to_uint - Converts a binary number to an unsigned int
  * @b: The binary string to converts
  *
- * Return: The positive number converted from a binary (0 and 1)
+ * Return: The positive number converted from a binary
  */
 unsigned int binary_to_uint(const char *b)
 {
