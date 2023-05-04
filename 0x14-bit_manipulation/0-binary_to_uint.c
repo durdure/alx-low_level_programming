@@ -36,7 +36,7 @@ unsigned int binary_to_uint(const char *b)
   *
   * Return: String length
   */
-int length_of_string(char *k)
+int length_of_string(const char *k)
 {
 	int l = 0;
 
