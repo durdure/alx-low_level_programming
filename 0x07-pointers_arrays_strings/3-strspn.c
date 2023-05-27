@@ -6,7 +6,6 @@
  * @accept: characters that prefix substring must include
  * Return: length of prefix substring
  */
-
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i, j, a_length = 0, length = 0;
