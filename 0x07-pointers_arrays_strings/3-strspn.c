@@ -16,7 +16,7 @@ unsigned int _strspn(char *s, char *accept)
 	for (i = 0; s[i] != '\0'; i++)
 		for (j = 0; j < length; j++)
 			if (s[i] == accept[j])
-				length++, j = a_len;
+				length++, j = length;
 			else
 				if (j == length - 1)
 					goto exit;
