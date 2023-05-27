@@ -9,16 +9,16 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i, j, length = 0, length = 0;
+	unsigned int i, j, a_length = 0, length = 0;
 
-	while (accept[lenght] != '\0')
-		length++;
+	while (accept[a_lenght] != '\0')
+		a_length++;
 	for (i = 0; s[i] != '\0'; i++)
-		for (j = 0; j < length; j++)
+		for (j = 0; j < a_length; j++)
 			if (s[i] == accept[j])
-				length++, j = length;
+				length++, j = a_length;
 			else
-				if (j == length - 1)
+				if (j == a_length - 1)
 					goto exit;
 exit: return (lenght);
 }
