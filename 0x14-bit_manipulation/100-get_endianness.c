@@ -5,13 +5,13 @@
  *
  * Return: 0 if big endian, 1 if little endian
  */
- int get_endianness(void)
- {
-    unsigned int snt;
-	  char *com;
+int get_endianness(void)
+{
+	unsigned int x;
+	char *co;
 
-	  snt = 1;
-	  com = (char *) &snt;
+	x = 1;
+	co = (char *) &x;
 
-	  return ((int)*com);
- }
+	return ((int)*co);
+}
