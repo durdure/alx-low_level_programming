@@ -6,19 +6,19 @@
  * @accept: characters that prefix substring must include
  * Return: length of prefix substring
  */
+
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i, j, a_length = 0, length = 0;
+	unsigned int i, j, a_len = 0, len = 0;
 
-	while (accept[a_lenght] != '\0')
-		a_length++;
+	while (accept[a_len] != '\0')
+		a_len++;
 	for (i = 0; s[i] != '\0'; i++)
-		for (j = 0; j < a_length; j++)
+		for (j = 0; j < a_len; j++)
 			if (s[i] == accept[j])
-				length++, j = a_length;
+				len++, j = a_len;
 			else
-				if (j == a_length - 1)
+				if (j == a_len - 1)
 					goto exit;
-exit: return (lenght);
+exit: return (len);
 }
-
